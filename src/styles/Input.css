@@ -1,0 +1,124 @@
+.Input{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:  flex-start;
+  width: 50%;
+  height: 100%;
+  padding:  0 5%;
+}
+
+
+.Input-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.Input-item label {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.Input-item input {
+  line-height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  border: 0.5px solid lightgray;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.Input-SelectTip-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.Input-SelectTip-buttons  input{
+  width: 30%;
+  padding: 2%;
+  margin-bottom: 10px;
+}
+
+.Input-SelectTip-buttons input[type='button']:enabled{
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  transition:0.2s ease;
+}
+
+.Input-SelectTip-buttons input[type='button']:hover{
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+.activeButton{
+  background-color: hsl(172, 67%, 45%)!important;
+  color: hsl(183, 100%, 15%) !important;
+}
+
+.Input-bill input:enabled, .InputPeople input:enabled, .inputLast-selectTip:enabled{
+  background-color: hsl(189, 41%, 97%);
+  position: relative;
+}
+
+.Input-bill input:focus, .InputPeople input:focus, .inputLast-selectTip:focus{
+border:2px solid hsl(172, 67%, 45%) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: 0px !important;
+  outline: none !important;
+  }
+
+.Input-bill input{
+  background: url(../assets/icon-dollar.svg) no-repeat scroll 10px 12px;
+}
+
+.InputPeople input{
+  background: url(../assets/icon-person.svg) no-repeat scroll 10px 12px;
+}
+
+ input[type="number"] {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+  text-align: end;
+  padding: 0 5% 0 10% ;
+} 
+
+.inputLast-selectTip{
+  height: 58px;
+  padding: 0 4.5% !important;
+}
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+@media only screen and (max-width : 375px) {
+  .Input {
+    width:100%;
+  }
+  #SelectTip {
+    font-size: 16px;
+  }
+}

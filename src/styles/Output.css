@@ -1,0 +1,85 @@
+.Output {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(183, 100%, 15%);
+  width: 50%;
+  padding: 5%;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.Result {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.Result h2 {
+  color: hsl(0, 0%, 100%);
+  line-height: 30px;
+  font-size: 18px;
+  margin-right: 80px;
+}
+
+.Result  h2 span {
+  color: hsl(184, 14%, 56%);
+  font-size: 16px;
+}
+
+.Result-item  {
+  color: hsl(172, 67%, 45%);
+  font-size: 30px;
+  word-wrap: anywhere;
+  justify-self: flex-end;
+  max-height: 200px;
+  max-width: 200px;
+  overflow: auto;
+}
+
+.Result-item::-webkit-scrollbar {
+  display: none;
+}
+
+.Output button:enabled {
+  width: 100%;
+  padding: 2.5%;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color:hsl(186, 14%, 43%);
+  color:hsl(184, 14%, 56%) ;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 100px;
+  transition: 0.2s ease;
+}
+
+.Output button:hover{
+  background-color:hsl(185, 41%, 84%);
+}
+.Output button:target {
+  width: 100%;
+  padding: 2.5%;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color:hsl(172, 67%, 45%) ;
+  color:hsl(183, 100%, 15%) ;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 100px;
+  transition: 0.2s ease;
+}
+
+
+@media only screen and (max-width : 375px) {
+  .Output {
+    width: 100%;
+  }
+}
+
